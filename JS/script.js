@@ -4,7 +4,7 @@ const main = document.querySelector('.main');
 const selection = document.querySelector('.selection');
 const title = document.querySelector('.main__title');
 const getData = () => {
-  return fetch('/db/quiz_db.json').then(response => response.json());
+  return fetch('./db/quiz_db.json').then(response => response.json());
 };
 
 const showElem = elem => {
